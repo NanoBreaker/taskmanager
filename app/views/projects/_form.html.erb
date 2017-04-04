@@ -1,0 +1,10 @@
+<%= form_for @project do |f| %>
+  <div class="form_control">
+    <%= f.label 'Название категории: ' %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="form_control">
+    <%= f.submit 'Добавить' %>
+  </div>
+<% end %>
