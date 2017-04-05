@@ -6,4 +6,4 @@
       <p><%= todo.text %> <%= check_box('tag', todo.__id__, {checked: todo.isCompleted}) %></p>
     <% end %>
 <% end %>
-<h2><%= link_to 'Добавление новой задачи', new_project_path %></h2>
+<h2><%= link_to 'Добавление новой задачи', new_todo_path %></h2>
