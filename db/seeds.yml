@@ -1,0 +1,23 @@
+projects:
+ - title: 'family'
+   todos:
+    - text: 'Get some milk'
+      isCompleted: false
+    - text: 'Cook some bacon'
+      isCompleted: true
+    - text: 'Repair the front door'
+      isCompleted: false
+ - title: 'work'
+   todos:
+    - text: 'Call my boss'
+      isCompleted: true
+    - text: 'Finish my work tasks'
+      isCompleted: true
+    - text: 'Get fired'
+      isCompleted: false
+ - title: 'therest'
+   todos:
+    - text: 'Do something'
+      isCompleted: false
+    - text: 'Ask a question on stackoverflow'
+      isCompleted: false

@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Taskmanager</title>
+  <title>Задачи</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<%= yield %>
+<body class="body">
+
+  <div class="page-header">
+    <div class="header-title">
+      <h1>Задачи</h1>
+    </div>
+    <div class="header-button">
+      <%= link_to '+', new_todo_path %>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="col-sm-6 col-md-3"><div><%= yield %></div></div>
+  </div>
 
 </body>
 </html>

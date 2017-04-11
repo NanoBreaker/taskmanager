@@ -14,6 +14,11 @@ class TodosController < ApplicationController
     end
   end
 
+  def update
+    @todo = Todo.find(params[:todo_id])
+    @todo.update(todo_params)
+  end
+
   private
 
   def todo_params

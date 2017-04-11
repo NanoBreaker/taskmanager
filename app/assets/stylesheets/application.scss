@@ -1,0 +1,97 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap";
+@import 'icheck/square/_all';
+
+
+@font-face {
+  font-family: 'OpenSans';
+  src:font-url('OpenSans-Light.ttf') format('truetype');
+  src:font-url('OpenSans-Regular.ttf') format('truetype');
+  src:font-url('OpenSans-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-family: 'OpenSans';
+  color:#000000;
+  font-size:30px;
+  padding:15px;
+}
+
+a {
+  font-size: 30px;
+  color:#ffffff;
+}
+
+.container{
+  width: 100%;
+  height: 1000px;
+  background: rgb(247, 247, 247);
+  padding: 50px;
+}
+
+.page-header {
+  text-align:center;
+  letter-spacing: 1px;
+  background: #1e8cea;
+  color: #fff;
+  padding: 20px;
+}
+
+.page-header h1 {
+  display: inline;
+  color:#ffffff;
+  font-family: 'OpenSans';
+  font-size:30px;
+}
+
+.header-title {
+  display: inline;
+}
+
+.header-button {
+  vertical-align: middle;
+  display: inline;
+  float: right;
+}
+
+.project {
+  background: #ffffff;
+  border-style: solid;
+  border-width: thin;
+  border-color: #DADADA;
+  margin: 20px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 10px 10px 5px -8px rgba(143,143,143,1);
+  -moz-box-shadow: 10px 10px 5px -8px rgba(143,143,143,1);
+  box-shadow: 10px 10px 5px -8px rgba(143,143,143,1);
+}
+
+.project-header {
+  margin: 10px;
+  border-bottom: solid;
+  border-width: thin;
+}
+
+.project-todos {
+  margin: 10px;
+}

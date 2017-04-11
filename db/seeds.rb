@@ -52,3 +52,9 @@ therest = Project.create(title: "Прочее")
 therest_todo_list.each do |text, isCompleted|
   therest.todos << Todo.create(text: text, isCompleted: isCompleted)
 end
+
+=begin
+seed_file = File.join(Rails.root, 'db', 'seeds.yml')
+config = YAML::load_file(seed_file)
+Project.create(config["projects"])
+=end

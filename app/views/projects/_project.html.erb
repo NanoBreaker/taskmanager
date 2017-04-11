@@ -1,0 +1,10 @@
+<div class="project">
+  <div class="project-header">
+    <h2><%= project.title %></h2>
+  </div>
+  <div class="project-todos">
+    <% project.todos.all.each do |todo| %>
+      <p><%= check_box('tag', todo.__id__, {class: 'icheckbox_square-blue', checked: todo.isCompleted}) %> <%= content_tag :todotext, todo.text %></p>
+    <% end %>
+  </div>
+</div>
