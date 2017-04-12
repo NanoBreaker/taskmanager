@@ -9,17 +9,15 @@
 
 <body class="body">
 
-  <div class="page-header">
-    <div class="header-title">
-      <h1>Задачи</h1>
-    </div>
-    <div class="header-button">
-      <%= link_to '+', new_todo_path %>
-    </div>
+  <div class="header">
+    <div class="header--label"><h1>Задачи</h1></div>
+    <%= link_to '+', new_todo_path, class: 'header--add' %>
   </div>
 
   <div class="container">
-    <div class="col-sm-6 col-md-3"><div><%= yield %></div></div>
+    <div class="row">
+      <%= yield %>
+    </div>
   </div>
 
 </body>

@@ -15,17 +15,28 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(project_params)
     if @project.save
-
+      # ...
     else
-
+      # ...
     end
+  end
 
+  def update
+    if @project.update(project_params)
+      # ...
+    else
+      # ...
+    end
   end
 
   private
 
+  def set_project
+    @project = Project.find(params[:id])
+  end
+
   def project_params
-    params.require(:project).permit(:title)
+    params.require(:project).permit(:foo, :bar, todos_attributes: [:isCompleted, :text])
   end
 
 end

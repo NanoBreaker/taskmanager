@@ -1,12 +1,18 @@
-<%= form_for @project do |f| %>
+<div class="project">
+  <%= form_for(local_assigns[:project] || @project) do |f| %>
 
-  <div class="form_control">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
+      <div class="project-header">
+        <%= f.label :title %>
+      </div>
 
-  <div class="form_control">
-    <%= f.submit 'Добавить' %>
-  </div>
+      <div class="project-todos">
+        <%= f.fields_for(:todos) do |tf| %>
+            <div class="todo">
+              <%= tf.check_box :isCompleted %>
+              <%= tf.label :text %>
+            </div>
+        <% end %>
+      </div>
 
-<% end %>
+  <% end %>
+</div>
